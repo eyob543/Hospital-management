@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+</head>
+<body>
+    <div class = "header">
+        <div class = "logo">
+          <img id = "logo_img" src="/images/logo.svg" alt = "logo">
+        </div>
+        <div class = "navigation">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="patients.html">Patients</a>
+        </div>
+      </div>
+    <h1>Welcome Doctor</h1>
+    <p id="welcomeMessage"></p>
+    <label for="patientName">Enter patient's name:</label>
+    <input type="text" id="patientNameInput">
+    <button onclick="viewPatient()">View Patient History</button>
+    <div id="patientInfoDisplay"></div>
+    <script src = "/scripts/doctor.js"></script>
+</body>
+</html>

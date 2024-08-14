@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class = "wrapper">
+        <div class = "header">
+            <div class = "logo">
+                <img id = "logo_img" src="../images/logo.svg" alt = "logo">
+            </div>
+            <div class = "navigation">
+                <a href="../index.html">Home</a>
+                <a href="../services.html">Services</a>
+                <a href="/blog.html">Blog</a>
+                <a href="../contact.html">Contact Us</a> |
+                <a href="signin.html">Sign in</a>      
+                <a href="../administrator.html">Administrator</a>
+                <a href="/staff.html">Staff</a>
+          
+            </div>
+        </div>
+    </div>
+        <div class="main-registration-block">
+            <div class="form-page">
+                <form onsubmit="handleSubmit(event)">
+                    <h1 style="text-align: center">Register</h1>
+                    <label  for="firstName">First Name</label><br>
+                    <input type="text" id="firstName" max="15" required><br>
+                    <label for="lastName">Last Name</label><br>
+                    <input type="text" id="lastName" max="15" required><br>
+                    <label for="Email">Email</label><br>
+                    <input type="email" id="Email" name="Email" placeholder="Email" required> <br>
+                    <label for="phone">Phone </label> <br>
+                    <input type="number" id="phone"  required><br>
+                    <label for="Password">Password</label><br>
+                    <input type="password" id="Password" name="Password" placeholder="Password" maxlength="8" minlength="4" pattern="^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[@#$%^&+=])(?!.*\s).{4,8}$" required><br>
+                    <label for="confirmPassword">Confirm Password</label><br>
+                    <input type="password" id="confirmPassword" name="Password" placeholder="Password" maxlength="8" minlength="4" pattern="^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[@#$%^&+=])(?!.*\s).{4,8}$" required>
+                    <div id="invalidInput" class="invalidInput"></div>
+                    <br><br>
+                    <button type="submit" id="submitButton" style="padding: 5px 10px; background-color: blue; color: white; border: none;"><a href="../user/appointment.html">sign up</a></button>
+                </form>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class = "bottom_wrapper">
+                <div class = "left_nav" >
+                    Follow Us On: <a href=" ">Facebook</a> | <a href="www.facebook.com">Twitter</a>
+                </div>
+                <div class = "right_nav">
+                    <a href=" ">Privacy</a> | <a href="">Terms of use</a>
+                </div>
+            </div>
+            <h2 style="text-align: center">Contact Us:</h2>
+            <p style="text-align: center">Address: Bole, Addis Ababa, Ethiopia</p>
+            <p style="text-align: center">Email: info@hospital.com</p>
+            <p style="text-align: center">Phone number: +251-912-345-6789</p>
+            <p align="center">Copyright © I-For-U Hospital 2024, All Rights Reserved</p>
+        </div>
+    </div>
+    <script src="/scripts/register.js"></script>
+</body>
+</html>

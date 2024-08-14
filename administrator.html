@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator Login</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+</head>
+<body>
+        <div class = "header">
+          <div class = "logo">
+            <img id = "logo_img" src="/images/logo.svg" alt = "logo">
+          </div>
+          <div class = "navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a> |
+            <a href="auth/signin.html">Patient</a>
+            <a href="administrator.html">Administrator</a>
+            <a href="staff.html">Staff</a>
+          </div>
+        </div>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <input type="submit" value="Login">
+        <div id="wrongPassword"></div>
+    </form>
+    <div class="footer">
+      <div class = "bottom_wrapper">
+          <div class = "left_nav" >
+              Follow Us On: <a href=" ">Facebook</a> | <a href="www.facebook.com">Twitter</a>
+          </div>
+          <div class = "right_nav">
+              <a href=" ">Privacy</a> | <a href="">Terms of use</a>
+          </div>
+      </div>
+      <h2 style="text-align: center">Contact Us:</h2>
+      <p style="text-align: center">Address: Bole, Addis Ababa, Ethiopia</p>
+      <p style="text-align: center">Email: info@hospital.com</p>
+      <p style="text-align: center">Phone number: +251-912-345-6789</p>
+      <p style="text-align:center">Copyright © I-For-U Hospital 2024, All Rights Reserved</p>
+  </div>
+    <script type="module" src="/scripts/administrator.js"></script>
+</body>
+</html>

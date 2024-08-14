@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Login</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+</head>
+<body>
+    <div class = "header">
+        <div class = "logo">
+          <img id = "logo_img" src="/images/logo.svg" alt = "logo">
+        </div>
+        <div class = "navigation">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact Us</a> |
+          <a href="auth/signin.html">Patient</a>
+          <a href="administrator.html">Administrator</a>
+          <a href="staff.html">Staff</a>
+        </div>
+      </div>
+    <h1>Staff Login</h1>
+    <form onsubmit="login(event)">
+        <label for="role">Select Role:</label>
+        <select id="role" required>
+            <option value="doctor">Doctor</option>
+            <option value="nurse">Nurse</option>
+        </select><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p id="message"></p>
+    <div class="footer">
+      <div class = "bottom_wrapper">
+          <div class = "left_nav" >
+              Follow Us On: <a href=" ">Facebook</a> | <a href="www.facebook.com">Twitter</a>
+          </div>
+          <div class = "right_nav">
+              <a href=" ">Privacy</a> | <a href="">Terms of use</a>
+          </div>
+      </div>
+      <h2 style="text-align: center">Contact Us:</h2>
+      <p style="text-align: center">Address: Bole, Addis Ababa, Ethiopia</p>
+      <p style="text-align: center">Email: info@hospital.com</p>
+      <p style="text-align: center">Phone number: +251-912-345-6789</p>
+      <p align="center">Copyright © I-For-U Hospital 2024, All Rights Reserved</p>
+  </div>
+    <script src="/scripts/staff.js"></script>
+</body>
+</html>
